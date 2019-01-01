@@ -24,8 +24,8 @@ before_deploy:
 - openssl aes-256-cbc -K $encrypted_209f5601644c_key -iv $encrypted_209f5601644c_iv
   -in deploy_rsa.enc -out deploy_rsa -d
 - eval "$(ssh-agent -s)"
-- chmod 600 /tmp/deploy\_rsa
-- ssh-add /tmp/deploy\_rsa
+- chmod 600 ./deploy\_rsa
+- ssh-add ./deploy\_rsa
 - echo -e "Host $DEPLOY_HOST\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 deploy:
 - provider: pages
