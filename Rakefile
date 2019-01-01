@@ -1,4 +1,8 @@
 require 'html-proofer'
 task :test do
-  HTMLProofer.check_directory("./_site/", http_status_ignore: [999]).run
+  options = {
+    http_status_ignore: [999],
+    url_ignore: [/(.*\.)?nichenjie.com/]
+  }
+  HTMLProofer.check_directory("./_site/", options).run
 end
