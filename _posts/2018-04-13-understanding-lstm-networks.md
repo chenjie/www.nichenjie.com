@@ -18,7 +18,7 @@ toc_icon: "info-circle"
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/RNN-rolled.png" data-lightbox="image-set-1" data-title="带有循环结构的RNN模型">
-<img src="/mdres/posts/2018/lstm/RNN-rolled.png" width="20%"/> </a>
+<img src="/mdres/posts/2018/lstm/RNN-rolled.png" width="20%" alt="RNN-rolled"> </a>
 <br> <strong>带有循环结构的RNN模型</strong> </p>
 
 在上图中，$A$代表任何神经网络(CNN, MLP...)，$X_t$代表在$t$时间点的输入，$h_t$代表在$t$时间点的输出。图中的循环结构让信息能够从RNN的一个时间点传递到之后的时间点去。
@@ -27,7 +27,7 @@ toc_icon: "info-circle"
 
 <p align="center"> <br>
 <a href="/mdres/posts/2018/lstm/RNN-unrolled.png" data-lightbox="image-set-1" data-title="循环结构被展开的RNN模型">
-<img src="/mdres/posts/2018/lstm/RNN-unrolled.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/RNN-unrolled.png" width="90%" alt="RNN-unrolled"> </a>
 <br> <strong>循环结构被展开的RNN模型</strong> </p>
 
 RNN链式结构的本质展现了它和序列(sequences & lists)是紧密相连的，所以它自然就是序列这种数据类型最合适的神经网络架构模型。
@@ -43,7 +43,7 @@ RNN的吸引力之一在于这样一种将之前的信息用于当前判断/抉�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/RNN-shorttermdepdencies.png" data-lightbox="image-set-1" data-title="短期(Short-Term)依赖的RNN模型">
-<img src="/mdres/posts/2018/lstm/RNN-shorttermdepdencies.png" width="70%"/> </a>
+<img src="/mdres/posts/2018/lstm/RNN-shorttermdepdencies.png" width="70%" alt="RNN-shorttermdepdencies"> </a>
 <br>
 <strong>短期(Short-Term)依赖的RNN模型</strong> </p>
 
@@ -53,7 +53,7 @@ RNN的吸引力之一在于这样一种将之前的信息用于当前判断/抉�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/RNN-longtermdependencies.png" data-lightbox="image-set-1" data-title="长期(Long-Term)依赖的RNN模型">
-<img src="/mdres/posts/2018/lstm/RNN-longtermdependencies.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/RNN-longtermdependencies.png" width="90%" alt="RNN-longtermdependencies"> </a>
 <br>
 <strong>长期(Long-Term)依赖的RNN模型</strong> </p>
 
@@ -70,7 +70,7 @@ LSTM设计之初是用来避免长期依赖问题的，长期地记忆信息是L
 
 <p align="center"> <br>
 <a href="/mdres/posts/2018/lstm/LSTM3-SimpleRNN.png" data-lightbox="image-set-1" data-title="标准RNN重复模组式结构中的$tanh$激活层">
-<img src="/mdres/posts/2018/lstm/LSTM3-SimpleRNN.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-SimpleRNN.png" width="90%" alt="LSTM3-SimpleRNN"> </a>
 <br>
 <strong>标准RNN重复模组式结构中的$tanh$激活层</strong> </p>
 
@@ -78,7 +78,7 @@ LSTM记忆元网络也有与标准RNN相似的链式结构，但是重复的模�
 
 <p align="center"> <br>
 <a href="/mdres/posts/2018/lstm/LSTM3-chain.png" data-lightbox="image-set-1" data-title="一个LSTM记忆元是包括四(4)个元素以特殊逻辑形式交互的复杂层">
-<img src="/mdres/posts/2018/lstm/LSTM3-chain.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-chain.png" width="90%" alt="LSTM3-chain"> </a>
 <br>
 <strong>一个LSTM记忆元是包括四(4)个元素以特殊逻辑形式交互的复杂层</strong> </p>
 
@@ -86,7 +86,7 @@ LSTM记忆元网络也有与标准RNN相似的链式结构，但是重复的模�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM2-notation.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM2-notation.png" width="80%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM2-notation.png" width="80%" alt="LSTM2-notation"> </a>
 <br> </p>
 
 在上图中，每条线都代表一个多维向量，从一个节点的输出端流向其他节点的输入端。粉色的圆圈代表逐点计算(element-wise or point-wise operation)，比如向量的加法。
@@ -102,7 +102,7 @@ LSTM记忆元的状态有点像传送带[译者注：更加确切来说是一条
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM3-C-line.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM3-C-line.png" width="100%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-C-line.png" width="100%" alt="LSTM3-C-line.png"> </a>
 <br> </p>
 
 LSTM记忆元的强大之处在于它能选择性删除或保留状态信息，这个过程是由一个叫“门(gate)”的结构来仔细控制的。
@@ -111,7 +111,7 @@ LSTM记忆元的强大之处在于它能选择性删除或保留状态信息，�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM3-gate.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM3-gate.png" width="20%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-gate.png" width="20%" alt="LSTM3-gate"> </a>
 <br> </p>
 
 $Sigmoid$激活函数输出值在0到1之间，描述了信息能够通过的比例。0代表**没有**信息通过，1代表信息**完整地**通过。一个LSTM记忆元有三(3)个这种门，目的是为了保护和控制记忆元的状态。
@@ -123,7 +123,7 @@ LSTM记忆元的第一步是要决定从现有记忆元状态中扔掉什么信�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM3-focus-f.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM3-focus-f.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-focus-f.png" width="90%" alt="LSTM3-focus-f"> </a>
 <br> </p>
 
 下一步我们要决定储存哪些新的信息到记忆元状态中去。这个分为两部分，第一，由$Sigmoid$激活函数层组成的被称为是“输入门”(input gate)的东西决定哪些向量中的维度将要被更新[译者注：我这里把它称为更新量系数]；第二，由$tanh$激活函数层生成新的，可以被加入到记忆元状态中的候选向量$\tilde{C}_t$。然后，将这两个向量合并作逐点乘积，生成记忆元状态更新向量。
@@ -132,7 +132,7 @@ LSTM记忆元的第一步是要决定从现有记忆元状态中扔掉什么信�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM3-focus-i.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM3-focus-i.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-focus-i.png" width="90%" alt="LSTM3-focus-i"> </a>
 <br> </p>
 
 现在，将旧的记忆元状态$C_{t−1}$更新为$C_t$，上面几步都已经说了我们要做的事情，我们现在就来实施一下。
@@ -143,7 +143,7 @@ LSTM记忆元的第一步是要决定从现有记忆元状态中扔掉什么信�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM3-focus-C.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM3-focus-C.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-focus-C.png" width="90%" alt="LSTM3-focus-C"> </a>
 <br></p>
 
 最后，我们需要决定输出什么。这个输出是基于现在记忆元状态的，但还要经过过滤。先用$Sigmoid$激活函数层来决定输出记忆元状态的哪些部分[译者注：输出系数]；再用$tanh$把记忆元状态数值挤压进-1到1之间；再对两者作逐点乘积，最后这样就能只输出我们决定输出的结果了。
@@ -152,7 +152,7 @@ LSTM记忆元的第一步是要决定从现有记忆元状态中扔掉什么信�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM3-focus-o.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM3-focus-o.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-focus-o.png" width="90%" alt="LSTM3-focus-o"> </a>
 <br> </p>
 
 ## LSTM记忆元的不同版本
@@ -162,7 +162,7 @@ LSTM记忆元的第一步是要决定从现有记忆元状态中扔掉什么信�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM3-var-peepholes.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM3-var-peepholes.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-var-peepholes.png" width="90%" alt="LSTM3-var-peepholes"> </a>
 <br> </p>
 
 上图结构中，**所有**的“门”上都加入了窥视孔，但在许多论文中有些“门”加而有些“门”不加。
@@ -171,14 +171,14 @@ LSTM记忆元的第一步是要决定从现有记忆元状态中扔掉什么信�
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM3-var-tied.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM3-var-tied.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-var-tied.png" width="90%" alt="LSTM3-var-tied"> </a>
 <br> </p>
 
 LSTM记忆元结构的一个戏剧性变化是GRU(Gated Recurrent Unit)，由[Cho, et al. (2014)](/mdres/posts/2018/lstm/1406.1078v3.pdf)在这篇论文中提出。它将“忘记门”(forget gate)和“输入门”(input gate)混合成一个“更新门”(input gate)，并且将记忆元状态和隐状态合并了起来，还做了些其他的改变。GRU记忆元模型比传统LSTM记忆元在结构上更为简单，并且广受欢迎。
 
 <p align="center">
 <a href="/mdres/posts/2018/lstm/LSTM3-var-GRU.png" data-lightbox="image-set-1">
-<img src="/mdres/posts/2018/lstm/LSTM3-var-GRU.png" width="90%"/> </a>
+<img src="/mdres/posts/2018/lstm/LSTM3-var-GRU.png" width="90%" alt="LSTM3-var-GRU"> </a>
 <br> </p>
 
 上述这些只是一小部分LSTM记忆元结构的变化，其他的还有像[Yao, et al. (2015)](/mdres/posts/2018/lstm/1508.03790v2.pdf)的Depth Gated RNNs. 还有一些运用了完全不同的方法来处理长期依赖问题，比如[Koutnik, et al. (2014)](/mdres/posts/2018/lstm/1402.3511v1.pdf)的Clockwork RNNs.
