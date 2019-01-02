@@ -1,7 +1,7 @@
 # [JellyBlog](https://nichenjie.com)
 
 ![Gem Version](https://img.shields.io/gem/v/jekyll.svg)
-![Build Status](https://img.shields.io/travis/com/jellycsc/JellyBlog-Travis-CI//master.svg)
+[![Build Status](https://travis-ci.com/jellycsc/JellyBlog-Travis-CI.svg?branch=master)](https://travis-ci.com/jellycsc/JellyBlog-Travis-CI)
 
 ## License
 [MIT](LICENSE)
