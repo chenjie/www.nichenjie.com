@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "About Me"
-    url: /about/
+  - title: "CV"
+    url: /mdres/cv/Resume.pdf
   - title: "Gists"
     url: /gist/
   - title: "WeChat"
