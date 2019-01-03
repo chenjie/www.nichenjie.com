@@ -9,4 +9,4 @@ title: "JellyGist"
 [https://gist.nichenjie.com/](https://gist.nichenjie.com/)
 
 ## 源码及纠错
-JellyGist 的开源代码保存在[我的代码仓库](https://github.com/jellycsc/JellyGist-Travis-CI)中，由 [GitHub Page](https://pages.github.com/) 提供网站服务。如果你在我发表的任何文章中发现错误或是错别字，欢迎到我的代码仓库中提交 Pull Request.
+JellyGist 的开源代码保存在[我的代码仓库](https://github.com/jellycsc/JellyGist-Travis-CI)中，由 ~~[GitHub Page](https://pages.github.com/)~~ [Alibaba Cloud（阿tào里lù云香港）](https://www.alibabacloud.com/zh) 提供服务器支持。如果你在我发表的任何文章中发现错误或是错别字，欢迎到我的代码仓库中提交 Pull Request.
