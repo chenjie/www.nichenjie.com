@@ -22,10 +22,10 @@ name                     : "Chenjie Ni"
 description              : "An amazing tech blog made by Chenjie Ni."
 url                      : "https://nichenjie.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "jellycsc/nichenjie.com"
+repository               : "jellycsc/JellyBlog-Travis-CI"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 100
 comments:
   provider               : "disqus" # false (default), "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
@@ -299,7 +299,7 @@ defaults:
 
   # _pages
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
       layout: single
