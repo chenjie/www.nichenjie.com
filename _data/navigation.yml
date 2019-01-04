@@ -2,8 +2,8 @@
 main:
   - title: "CV"
     url: /mdres/cv/Resume.pdf
-    icon: <i class="fas fa-external-link-alt"></i>
-  - title: "Gists"
+    icon: <i class="fas fa-external-link-alt fa-xs"></i>
+  - title: "JellyGist"
     url: /gist/
   - title: "WeChat"
     url: /wechat-official/
