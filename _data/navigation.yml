@@ -3,7 +3,8 @@ main:
   - title: "CV"
     url: /mdres/cv/Resume.pdf
     icon: <i class="fas fa-external-link-alt fa-xs"></i>
-  - title: "JellyGist"
+    new_tab: true
+  - title: "Gists"
     url: /gist/
   - title: "WeChat"
     url: /wechat-official/

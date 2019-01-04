@@ -11,7 +11,7 @@
               {%- assign url = link.url | relative_url -%}
             {%- endif -%}
             <li class="masthead__menu-item">
-              <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }} {% if link.icon %}{{ link.icon }}{% endif %}</a>
+              <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %} {% if link.new_tab %}target="_blank"{% endif %}>{{ link.title }} {% if link.icon %}{{ link.icon }}{% endif %}</a>
             </li>
           {%- endfor -%}
         </ul>
