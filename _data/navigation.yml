@@ -2,6 +2,7 @@
 main:
   - title: "CV"
     url: /mdres/cv/Resume.pdf
+    icon: <i class="fas fa-external-link-alt"></i>
   - title: "Gists"
     url: /gist/
   - title: "WeChat"
