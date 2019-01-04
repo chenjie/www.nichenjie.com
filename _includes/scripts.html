@@ -9,7 +9,12 @@
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
-  <script defer src="/assets/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+  <script src="/assets/js/nav-check.js"></script>
+  <script>
+    $.getScript( "/assets/js/all.js", function( data, textStatus, jqxhr ) {
+      check();
+    });
+  </script>
 {% endif %}
 
 <script src="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.js"></script>
