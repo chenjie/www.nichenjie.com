@@ -31,6 +31,12 @@
     padding-right: $right-sidebar-width;
   }
 
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .page__inner-wrap {
     float: left;
     margin-top: 1em;
