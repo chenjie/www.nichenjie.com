@@ -4,7 +4,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2015 Luke Jackson
 */
 
-$.getScript("/assets/js/all.js", function(){
+$(document).ready(function() {
   var $btn = $("nav.greedy-nav .greedy-nav__toggle");
   var $vlinks = $("nav.greedy-nav .visible-links");
   var $hlinks = $("nav.greedy-nav .hidden-links");
