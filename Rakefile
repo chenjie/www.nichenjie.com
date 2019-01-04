@@ -2,7 +2,7 @@ require 'html-proofer'
 task :test do
   options = {
     http_status_ignore: [999],
-    url_ignore: [/(.*\.)?nichenjie.com/, /bootcdn/],
+    url_ignore: [/(.*\.)?nichenjie.com/, /bootcdn/, /bootcss/],
     assume_extension: true,
     allow_hash_href: true
   }
