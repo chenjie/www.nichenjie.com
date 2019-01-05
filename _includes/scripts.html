@@ -9,6 +9,11 @@
   {% endfor %}
 {% else %}
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+  <script defer>
+      $(document).ready(function() {
+          window.dispatchEvent(new Event('resize'));
+      });
+  </script>
 {% endif %}
 
 <script src="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.js"></script>
