@@ -148,6 +148,9 @@ footer:
     - label: "Zhihu"
       icon: "fab fa-fw fa-zhihu"
       url: "https://www.zhihu.com/people/ni-chen-jie"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/chenjie-ni-b1613614a"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
