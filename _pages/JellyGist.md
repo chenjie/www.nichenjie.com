@@ -1,5 +1,5 @@
 ---
-permalink: /gist/
+permalink: /JellyGist/
 title: "JellyGist"
 ---
 

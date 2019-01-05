@@ -1,6 +1,6 @@
 ---
-title: "按年份归档"
-permalink: /year-archive/
+title: "Time Capsule"
+permalink: /time-capsule/
 layout: posts
 author_profile: true
 ---

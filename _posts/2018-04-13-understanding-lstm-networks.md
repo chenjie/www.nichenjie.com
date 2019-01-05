@@ -1,6 +1,7 @@
 ---
 title: Understanding LSTM Networks
 excerpt: "一篇文章理解LSTM记忆元网络，本文翻译自 Google Brain 机器学习研究员 colah 的博文。"
+categories: machine-learning
 last_modified_at: 2019-01-05T19:32:34+08:00
 toc: true
 ---
