@@ -69,6 +69,11 @@ algolia:
   index_name             : JellyBlog # YOUR_INDEX_NAME
   search_only_api_key    : 4ac755d666f54b635734053b96b32f53 # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : # true (default), false
+  # Exclude more files from indexing
+  files_to_exclude:
+    - _pages/category-archive.md
+    - _pages/year-archive.md
+    - index.html
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
