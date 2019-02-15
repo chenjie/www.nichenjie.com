@@ -11,7 +11,7 @@ Mobile Version             |  Full-sized Version
 ## Blog Focuses
 * Entry level machine and/or probabilistic learning tricks and mathmetical derivations.
 * Linux DevOps
-* And more ... If you are interested in something I've done, send me an email and I will consider writing an article about it.
+* And more ... If you are interested in something I've done, send me an [email](mailto:nichenjie2013@gmail.com) and I will consider writing an article about it.
 
 ## Code License
 [MIT](LICENSE)
