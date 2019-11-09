@@ -108,54 +108,33 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chenjie Ni"
-  avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "UofT Computer Science new graduate, CSCB09 TA and Easy 4.0 Inc. tutor; Machine learning enthusiast; Web Dev, Linux Ops, VT-d geek. Personal tech blog/tutorial creator; ESXi and Proxmox homelab user."
-  organization     : "University of Toronto"
-  location         : "Toronto, ON, Canada"
-  email            : 
-  wechat           : "nichenjie2013"
-  links:
-    - label: "nichenjie2013@gmail.com"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:nichenjie2013@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://nichenjie.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/jellycsc"
-    - label: "Zhihu"
-      icon: "fab fa-fw fa-zhihu"
-      # url: "https://www.zhihu.com/people/ni-chen-jie"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+  name             : Chenjie Ni
+  avatar           : /assets/images/photo.jpg
+  bio              : I'm a UofT computer science graduate. I'm currently working as a full-time software developer at Crowdmark Inc. I'm interested in Linux DevOps, image processing and machine learning.
+  organization     : Crowdmark Inc.
+  organization_url : https://crowdmark.com/
+  location         : 43°39'N 79°23'W
+  email            : nichenjie2013@gmail.com
+  wechat           : nichenjie2013
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jellycsc"
-    - label: "Zhihu"
-      icon: "fab fa-fw fa-zhihu"
-      url: "https://www.zhihu.com/people/ni-chen-jie"
+      url: https://github.com/jellycsc
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/chenjie-ni/"
+      url: https://www.linkedin.com/in/chenjie-ni/
+    - label: "Zhihu"
+      icon: "fab fa-fw fa-zhihu"
+      url: https://www.zhihu.com/people/ni-chen-jie
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: https://twitter.com/imjackni
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -164,7 +143,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: https://www.instagram.com/imjackni/
 
 
 # Reading Files
