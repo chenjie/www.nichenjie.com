@@ -341,6 +341,7 @@ zh: &DEFAULT_ZH_HANS
   more_label                 : "了解更多"
   related_label              : "猜您还喜欢"
   follow_label               : "Follow me on:"
+  profile_label              : "Profile"
   feed_label                 : "Feed"
   powered_by                 : "Powered by"
   website_label              : "网站"
