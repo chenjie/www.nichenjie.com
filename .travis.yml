@@ -23,7 +23,9 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - JEKYLL_ENV=production
 sudo: false
-before_deploy: script/s3-deploy
+before_deploy:
+  - chmod +x script/s3-deploy
+  - script/s3-deploy
 deploy:
 - provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
