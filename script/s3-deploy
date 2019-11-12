@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+aws s3 rm s3://nichenjie.com --recursive --region ca-central-1
