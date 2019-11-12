@@ -1,8 +1,7 @@
 ---
-title: How to install GDB in macOS High Sierra
+title: 如何在 macOS High Sierra 上安装 GDB
 excerpt: "To make this process less painful ..."
-categories: c
-last_modified_at: 2019-02-16T19:32:34+08:00
+categories: programming
 ---
 
 ## System Requirement

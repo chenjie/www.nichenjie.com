@@ -1,8 +1,7 @@
 ---
-title: Interesting Combinatorics Problems
-excerpt: "有趣的排列组合学。"
-categories: math
-last_modified_at: 2019-04-18T19:32:34+08:00
+title: "[MAT344] 大学和女友同课是什么体验？"
+categories: study
+last_modified_at: 2019-11-11
 ---
 
 在多大学习的最后一学期有幸和 KiKi 女神同课 MAT344 (不是 cs 有点遗憾)，这也是我辅修数学的收官课。这学期 MAT344 的难度较往年提升了不少，Midterm 的画风跟水课完全不沾边。每周 lecture 学生的平均出勤率少于 50%，所以也不难想象 midterm 是有多惨烈了，部分愣头青还去了 math dept 投诉……
@@ -12,6 +11,8 @@ last_modified_at: 2019-04-18T19:32:34+08:00
 KiKi 女神在 midterm 之前的出勤率低于 50%，而之后的出勤率可谓超神，达到了 99.99%，你猜她唯一没来的那次是因为什么？（睡过了，逃。。）你们再猜，为什么她 midterm 前后出勤率竟有如此大的差距？(Hint: 不是因为 midterm 考砸了)
 
 言归正传：MAT344 这学期的两个 instructor 都非常认真负责，其中 Zachary Wolske 是我 223/224 的 TA，135 的 course instructor (TA coordinator)，就在这样的大环境下，KiKi 和我 midterm 之后奋起直追，希望最后能收获我们满意的结果（final还没出分）。
+
+【2019年11月11日更新】 Final 其实早就出分了，我家这个小仙女不让我说分数，她说谈分伤感情 😛
 
 ## Struggles and blocks
 

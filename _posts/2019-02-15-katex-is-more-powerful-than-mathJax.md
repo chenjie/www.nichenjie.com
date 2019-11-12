@@ -1,8 +1,7 @@
 ---
-title: Powerful KaTeX
-excerpt: "Yet another KaTeX render demo"
-categories: machine-learning
-last_modified_at: 2019-02-15T19:32:34+08:00
+title: KaTeX
+excerpt: "比 MathJax 更高效的公式渲染器"
+categories: programming
 ---
 
 ## Repeating fractions

@@ -4,14 +4,14 @@ main:
     url: /cv.pdf
     icon: <i class="fas fa-external-link-alt fa-xs"></i>
     new_tab: true
+  - title: "Categories"
+    url: /categories/
+  - title: "All Posts"
+    url: /all-posts/
   - title: "JellyGist"
     url: /JellyGist/
   - title: "WeChat Official"
     url: /wechat-official/
-  - title: "Categories"
-    url: /categories/
-  - title: "Time Capsule"
-    url: /time-capsule/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

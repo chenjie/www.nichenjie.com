@@ -1,7 +1,6 @@
 ---
-title: ConvNet Kernel Size
-excerpt: "卷积神经网络输出大小怎么算？"
-categories: machine-learning
+title: 计算卷积神经网络 Kernel 大小的技巧
+categories: study
 last_modified_at: 2018-09-22T19:32:34+08:00
 ---
 
