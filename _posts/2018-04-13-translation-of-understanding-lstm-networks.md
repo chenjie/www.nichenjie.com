@@ -1,5 +1,5 @@
 ---
-title: 理解 LSTM 记忆元网络
+title: 深度理解 LSTM 记忆元网络
 categories: study
 last_modified_at: 2019-01-05T19:32:34+08:00
 toc: true
