@@ -1,7 +1,8 @@
 ---
-title: "[MAT344] 大学和女友同课是什么体验？"
+title: "大学和女友同课是什么体验？"
 categories: study
 last_modified_at: 2019-11-11
+tags: uoft mat344
 ---
 
 在多大学习的最后一学期有幸和 KiKi 女神同课 MAT344 (不是 cs 有点遗憾)，这也是我辅修数学的收官课。这学期 MAT344 的难度较往年提升了不少，Midterm 的画风跟水课完全不沾边。每周 lecture 学生的平均出勤率少于 50%，所以也不难想象 midterm 是有多惨烈了，部分愣头青还去了 math dept 投诉……
