@@ -4,6 +4,7 @@ categories: programming
 tags: aws s3 cloudfront
 date: 2019-11-13T20:16:49-05:00
 excerpt: 本文介绍了使用 AWS S3, CloudFront, Certificate Manager 以及 Route 53 的一种“完美”静态免费 SSL/HTTPS 网站部署方案。它的特点有安全，响应速度快，高可用（High availability），高可扩展性（High scalability）以及高数据可用性（Data availability）。除此之外还具备负载均衡（Load balancing），容灾（Disaster Recovery），内容分发（CDN / Content Delivery）的能力。
+published: false
 ---
 
 感谢你点击并浏览本文，希望这篇文章/教程对你有所帮助。
