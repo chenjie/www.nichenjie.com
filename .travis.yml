@@ -44,7 +44,7 @@ deploy:
     skip_cleanup: true
     region: ca-central-1
     local_dir: _site
-    cache_control: max-age=31536000
+    cache_control: "public, max-age=3600"
 
 after_deploy:
   - chmod +x script/invalidate-cache.sh
