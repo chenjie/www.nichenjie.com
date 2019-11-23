@@ -2,6 +2,7 @@
 title: 如何在 macOS High Sierra 上安装 GDB
 excerpt: "To make this process less painful ..."
 categories: programming
+tags: c
 ---
 
 ## System Requirement

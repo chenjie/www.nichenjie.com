@@ -2,6 +2,7 @@
 title: 计算卷积神经网络 Kernel 大小的技巧
 categories: study
 last_modified_at: 2018-09-22T19:32:34+08:00
+tags: 卷积神经网络
 ---
 
 今天我来说说一个很有用的公式，参考 Stanford CS231n 课程笔记。[[Link](http://cs231n.github.io/convolutional-networks/#conv)]
