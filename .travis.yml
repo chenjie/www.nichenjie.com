@@ -1,7 +1,7 @@
 language: ruby
 
 rvm:
-  - 2.6.5
+  - 2.7.2
 
 addons:
   apt:
@@ -40,11 +40,11 @@ deploy:
   - provider: s3
     access_key_id: "$AWS_ACCESS_KEY_ID"
     secret_access_key: "$AWS_SECRET_ACCESS_KEY"
-    bucket: nichenjie.com
+    bucket: www.nichenjie.com
     skip_cleanup: true
-    region: ca-central-1
+    region: ap-east-1
     local_dir: _site
-    cache_control: "public, max-age=3600"
+    cache_control: "public, max-age=31536000"
 
 after_deploy:
   - chmod +x script/invalidate-cache.sh

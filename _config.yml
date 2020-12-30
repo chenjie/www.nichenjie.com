@@ -10,19 +10,20 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
+theme                    : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "zh-CN"
-title                    : "JellyBlog"
+title                    : "倪晨杰的博客 Chenjie's blog"
+chinese_title            : "倪晨杰的博客"
 title_separator          : "-"
-name                     : "Chenjie Ni"
-description              : "A subspace of the universe."
-url                      : "https://nichenjie.com"
+name                     : "倪晨杰 Chenjie Ni"
+description              : "A subspace of the www universe."
+url                      : "https://www.nichenjie.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "jellycsc/JellyBlog-Travis-CI"
+repository               : "chenjie/JellyBlog-Travis-CI"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -108,9 +109,9 @@ analytics:
 
 # Site Author
 author:
-  name             : Chenjie Ni
+  name             : 倪晨杰 Chenjie Ni
   avatar           : /assets/images/photo.jpg
-  bio              : I'm a UofT computer science graduate. I'm currently working as a full-time software developer at Crowdmark Inc. I'm interested in Linux DevOps, image processing and machine learning.
+  bio              : 多伦多大学毕业的全职码农，热衷于树莓派以及 AWS 云服务，平时喜欢绕着 Queen's Park 慢跑
   organization     : Crowdmark Inc.
   organization_url : https://crowdmark.com/
   location         : 43°39'N 79°23'W
@@ -125,7 +126,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: https://github.com/jellycsc
+      url: https://github.com/chenjie
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: https://www.linkedin.com/in/chenjie-ni/
@@ -201,7 +202,7 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-  math_engine: katex
+  math_engine: null
   math_engine_opts: {}
 
 
@@ -296,3 +297,10 @@ defaults:
       layout: single
       author_profile: true
       comments: false
+
+katex:
+  js_path: "assets/js"  # Path used to search for katex.min.js
+  rendering_options:
+    # Default KaTeX rendering options. See https://github.com/Khan/KaTeX#rendering-options
+    throw_error: true                       # throwOnError - set to false if you want rendering to output error as text rather than a build error
+    error_color: "#cc0000"                  # errorColor

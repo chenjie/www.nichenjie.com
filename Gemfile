@@ -15,6 +15,8 @@ group :jekyll_plugins do
     gem "html-proofer"
     gem "rake"
     gem "katex"
+    gem "kramdown-parser-gfm"
+    gem "kramdown-math-katex"
     gem "execjs"
 end
 
