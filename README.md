@@ -1,9 +1,9 @@
 # [JellyBlog](https://www.nichenjie.com)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
-[![Last Commit](https://img.shields.io/github/last-commit/chenjie/JellyBlog-Travis-CI.svg)](https://github.com/chenjie/JellyBlog-Travis-CI/commits/master)
+[![Last Commit](https://img.shields.io/github/last-commit/chenjie/www.nichenjie.com.svg)](https://github.com/chenjie/www.nichenjie.com/commits/master)
 [![Gem Version](https://img.shields.io/gem/v/jekyll.svg)](https://rubygems.org/gems/jekyll)
-[![Build Status](https://travis-ci.com/chenjie/JellyBlog-Travis-CI.svg?branch=master)](https://travis-ci.com/chenjie/JellyBlog-Travis-CI)
+[![Build Status](https://travis-ci.com/chenjie/www.nichenjie.com.svg?branch=master)](https://travis-ci.com/chenjie/www.nichenjie.com)
 [![Website](https://img.shields.io/website-up-down-green-red/http/www.nichenjie.com.svg?label=website-status)](https://www.nichenjie.com/) 
 
 ## Screenshots

@@ -17,7 +17,7 @@ toc: true
 
 ## 博客配置详情
 
-本文会以[此 Jekyll 博客](https://github.com/chenjie/JellyBlog-Travis-CI)的搭建和部署为例，你可以随便点击页面上的链接🔗来测试此方案的效果，具体详细参数/说明：
+本文会以[此 Jekyll 博客](https://github.com/chenjie/www.nichenjie.com)的搭建和部署为例，你可以随便点击页面上的链接🔗来测试此方案的效果，具体详细参数/说明：
 
 ```
 Ruby: 2.6.5
@@ -147,7 +147,7 @@ Cache Behavior Settings 这边我推荐 `Redirect HTTP to HTTPS`，打开 `Compr
 
 ### Step 4. Travis CI 自动部署
 
-这里可以参考我现在的 `.travis.yml` 配置，你可以在[这里](https://github.com/chenjie/JellyBlog-Travis-CI/blob/master/.travis.yml)找到，主要就是以下代码：
+这里可以参考我现在的 `.travis.yml` 配置，你可以在[这里](https://github.com/chenjie/www.nichenjie.com/blob/master/.travis.yml)找到，主要就是以下代码：
 
 ```
 before_deploy:
@@ -193,4 +193,4 @@ aws cloudfront create-invalidation --distribution-id E3U0JG8KK5Y4U6 --paths "/*"
 
 ## 大功告成
 
-Enjoy! 如果你有什么问题，欢迎在评论区中让我知道，你也可以直接在我的 [GitHub Repo](https://github.com/chenjie/JellyBlog-Travis-CI) 中 Open Issue 或者 PR. Thanks for reading till the end!
+Enjoy! 如果你有什么问题，欢迎在评论区中让我知道，你也可以直接在我的 [GitHub Repo](https://github.com/chenjie/www.nichenjie.com) 中 Open Issue 或者 PR. Thanks for reading till the end!
