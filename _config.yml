@@ -23,7 +23,7 @@ name                     : "倪晨杰 Chenjie Ni"
 description              : "A subspace of the www universe."
 url                      : "https://www.nichenjie.com"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "chenjie/JellyBlog-Travis-CI"
+repository               : "chenjie/www.nichenjie.com"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
