@@ -6,16 +6,6 @@
 [![Build Status](https://travis-ci.com/jellycsc/JellyBlog-Travis-CI.svg?branch=master)](https://travis-ci.com/github/jellycsc/JellyBlog-Travis-CI)
 [![Website](https://img.shields.io/website-up-down-green-red/http/www.nichenjie.com.svg?label=website-status)](https://www.nichenjie.com/) 
 
-## Screenshots
-Mobile Version             |  Full-sized Version
-:-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/25379724/52883382-b8363280-3138-11e9-977b-dc4d8d5b1f3e.png" width="710"/>  |  ![full-sized](https://user-images.githubusercontent.com/25379724/52883391-bd937d00-3138-11e9-9d74-ec2fbcd66e24.png)
-
-## Blog Focuses
-* Entry level machine and/or probabilistic learning tricks and mathmetical derivations.
-* Linux DevOps
-* And more ... If you are interested in something I've done, send me an [email](mailto:nichenjie2013@gmail.com) and I will consider writing an article about it.
-
 ## Code License
 [MIT](LICENSE)
 
