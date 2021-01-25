@@ -32,7 +32,7 @@ CS:GO 是 Steam 游戏平台上的一款免费游戏，我觉得与穿越火线�
 
 既然在自己现有的电脑上跑不起来，我忽然想到 Kiki 有一台 2015 年顶配的 15 吋 MBP，搭载了 Radeon R9 M370X 独立显卡，于是乎我立刻在 MacOS 上装好了 Steam，下载游戏，打开……结果非常失望，调用 OpenGL 接口的 CS:GO 比我台式机集显还要卡，我去……
 
-Ok, 我又思忖了一下，好像最近云游戏（Cloud Gaming）挺火的，于是乎说干就干，查了很多 reddit 的攻略，决定使用 Amazon EC2 G4 Instances + Parsec 这个组合实现，感谢 [@jamesstringerparsec](https://github.com/jamesstringerparsec) 提供的 Windows 下[一键环境部署工具](https://github.com/parsec-cloud/Parsec-Cloud-Preparation-Tool)，一番折腾后终于可以跑起来了，我在台式机上装好 Parsec 客户端，然后连接远端的 EC2 服务器，下载 Steam 安装游戏。打开游戏后第一感觉是比本地要流畅不少，画质可能由于压缩原因还是牺牲了一些。然后我打开一局游戏玩了一会儿，发现一个很奇怪的 bug，差不多玩 5-10 秒就会卡一下，我根据官网的 [Troubleshooting Lag, Latency and Quality Issues](https://support.parsec.app/hc/en-us/articles/115002683371-Troubleshooting-Lag-Latency-and-Quality-Issues) 指南查了一下，没有发现任何问题 Decode and Encode 延迟都正常，网络带宽还有很多的富余，网络延迟也是小于 40 ms 的。我后续又尝试了魔改各种参数，各种排列组合，包括英伟达控制面板，始终都没法解决这个问题。最后我又尝试了把 OS 换到 Windows Server 2016 以及 Azure 平台的 NV6 Tesla M60 显卡，问题依旧。~~如果在阅读这篇文章的你解决了这个问题，一定要告诉我哈！~~ 已解决，见[2021年1月23日更新](#2021年1月23日更新)。
+Ok, 我又思忖了一下，好像最近云游戏（Cloud Gaming）挺火的，于是乎说干就干，查了很多 reddit 的攻略，决定使用 Amazon EC2 G4 Instances + Parsec 这个组合实现，感谢 [@jamesstringerparsec](https://github.com/jamesstringerparsec) 提供的 Windows 下[一键环境部署工具](https://github.com/parsec-cloud/Parsec-Cloud-Preparation-Tool)，一番折腾后终于可以跑起来了，我在台式机上装好 Parsec 客户端，然后连接远端的 EC2 服务器，下载 Steam 安装游戏。打开游戏后第一感觉是比本地要流畅不少，画质可能由于压缩原因还是牺牲了一些。然后我打开一局游戏玩了一会儿，发现一个很奇怪的 bug，差不多玩 5-10 秒就会卡一下，我根据官网的 [Troubleshooting Lag, Latency and Quality Issues](https://support.parsec.app/hc/en-us/articles/115002683371-Troubleshooting-Lag-Latency-and-Quality-Issues) 指南查了一下，没有发现任何问题 Decode and Encode 延迟都正常，网络带宽还有很多的富余，网络延迟也是小于 40 ms 的。我后续又尝试了魔改各种参数，各种排列组合，包括英伟达控制面板，始终都没法解决这个问题。最后我又尝试了把 OS 换到 Windows Server 2016 以及 Azure 平台的 NV6 Tesla M60 显卡，问题依旧。~~如果在阅读这篇文章的你解决了这个问题，一定要告诉我哈！~~ 已解决，见[最终的问题解决办法](#最终的问题解决办法)。
 
 你觉得我会就此罢休？我这个人一折腾就停不下来了，在尝试了台式机集显，MBP 独显以及云游戏后我决定购买我人生中的第一张正版显卡（对的你没有看错，之前在国内因为图便宜在X宝买了一张盗版的 GTX 显卡）。直接上图：
 
@@ -53,3 +53,15 @@ Ok, 我又思忖了一下，好像最近云游戏（Cloud Gaming）挺火的，�
 前两天我用 [PingPlotter](https://www.pingplotter.com/) 和 [Packet Loss Test](https://packetlosstest.com/) 测试了一下发现确实是丢包造成的卡顿，大致的故障表现就是起先延迟正常，但是每隔 5-10 秒就 spike 一下。于是我打电话给 Fido tech support 然后描述了一下这个情况，他们今天派了一个师傅过来看。师傅大概是中午12点半左右到的，他先查看了一下我这幢楼外面的光纤信号，然后打电话给我说好像是外面光纤的信号问题，说他们需要 24-48 小时调一下，应该会好。我将信将疑，感觉是他敷衍我，于是我就又问他要了个新的路由器，然后我自己换上之后，问题就立刻解决了xD. 我试了试 Amazon EC2 G4 Instances + Parsec 的云游戏组合，发现 5-10 秒卡一下的问题消失了，不过体验还是没有本地独显跑的好，主要就是画质不好和 input lag 有些高，如果不玩这种 FPS 游戏，input lag 应该基本没有太大影响，但是画质问题是现在云游戏的“通病”，期待未来 [AV1](https://en.wikipedia.org/wiki/AV1) 编码对于画质的改善。
 
 事情到这里终于有了一个圆满的结局，怎么样，这次折腾够折腾不？
+
+## 2021年1月25日更新
+
+这个卡顿现象在换好路由器后昨天又发生了，妈蛋。。。在跟 Rogers Home Internet L2 support 通了长达2小时的电话后还是没有结果，他们帮我 escalate 了一下 ticket，最后说如果还是不能解决的话他们也没有办法了，你只能去换一家 ISP (P.S. 这里插一句，如果你家有很多人一起使用，并且你要玩低延迟的 FPS 类型游戏，直接选 Bell Fibre，原因之后会讲)。说到这里我非常感谢帮我 troubleshoot 的小哥 Vincent (可能是[这位](https://www.linkedin.com/in/vincent-tan-53554873/?originalSubdomain=ca)？)，他说话很实在，看得出在尽力帮我解决问题。我们在相互感谢后挂断了电话，可是问题仍然没有解决，依我以前的性格估计就放弃了，我当时真的有点怀疑是什么非常奇怪的 bug 导致的，理论上都说不通。。。可是！！我当天正好有点时间，于是在网上又是一顿搜索，开始是怀疑路由器的问题，因为新换的路由器也是同一型号的。后来再仔细搜了搜，发现很多人在讨论这个叫做 [Bufferbloat](https://en.wikipedia.org/wiki/Bufferbloat) 的问题，虽然问题也跟延迟有关，但是我刚开始不以为然，因为大多数人都是在 exaggerate 了带宽之后才发生的这个问题。后来我在检查了我的 motionEye 树莓派之后我貌似发现了一点端倪，由于我的 Fido 上传带宽只有 10 Mbps，我的 motionEye 每过几秒都会占用差不多 5 Mbps，我把 `nload` 显示的带宽占用图表和我的延迟图作对比，惊奇地发现它们的 pattern 竟然非常吻合，每当上传带宽占用的时候，延迟必然会出现一个小的 spike，有时候是 80 ms，而有时候甚至到了 300+ ms。到这里我还是不敢 100% 确定这就是问题所在，于是我又开了一局 CS:GO，把画面调成窗口模式，把两个图表放在旁边作对比，发现每次卡顿之前必有 spike，所以这就证明了问题确实和这个是相关联的。
+
+## 最终的问题解决办法
+
+该问题在 CS:GO 里的表现是 rollback/teleport lag, 虽然人物已经走到了某个位置，但是突然又闪回几秒前的位置。这是由于 UDP 丢包导致的，可以使用 `iperf` 来进行 UDP 丢包测试以确定问题。确定了 Bufferbloat 的问题之后，解决它就很容易了：
+
+1. 如果你的路由器支持 QoS 的功能，打开它就大功告成了。
+2. 如果不支持 QoS 的话，最简单的不花钱的办法就是限制网速，如果路由器支持网速限制的话就在路由器里把网速限制为你 plan 的 90%-95% 左右。如果路由器不支持限速，那只能在系统里限速，Linux 推荐用 `wondershaper`.
+3. 一劳永逸花钱的办法有升级 plan，更换支持 QoS 限速的路由器。
