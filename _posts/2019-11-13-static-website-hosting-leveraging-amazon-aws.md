@@ -2,7 +2,7 @@
 title: AWS 静态网站“完美”搭建方案
 categories: programming
 tags: aws s3 cloudfront
-date: 2019-11-16T14:08:49-05:00
+date: 2022-11-16T14:08:49-05:00
 published: true
 toc: true
 ---
